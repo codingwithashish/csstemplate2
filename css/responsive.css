@@ -1,0 +1,252 @@
+/* min-width queries */
+@media(min-width:576px){
+    .container{    
+        max-width: 540px;
+    }
+   
+}
+
+@media(min-width:768px){
+    .container{    
+         max-width: 720px;
+    }
+
+    /* About section */
+    .timeline{
+        position: relative;
+    }
+
+    .timeline::before{
+        content: '';
+        position: absolute;
+        width: 2px;
+        min-height: 100%;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #e2e4e6;
+    }
+
+    .timeline li{
+        width: 50%;
+        position: relative;
+        display: flex;
+        margin-bottom: 100px;
+    }
+
+    .timeline li:last-child{
+        margin-bottom: 0;
+    }
+
+    .timeline-img{
+        width: 40rem;
+        max-width: 100%;
+    }
+
+    .timeline li:nth-child(odd){
+        float: left;
+        clear: both;
+        text-align: right;  
+    }
+
+    .timeline li:nth-child(even){
+        float: right;
+        clear: both;
+        text-align: left;
+    }
+
+    .timeline li:nth-child(odd) .timeline-content{
+        order: 1;
+        padding-left: 85px;
+    }
+
+    .timeline-content p{
+        line-height: 1.9;
+    }
+
+    .timeline li:nth-child(odd) .timeline-img{
+        order: 2;
+    }
+
+    .timeline li:nth-child(even) .timeline-content{
+        order: 2;
+        padding-right: 85px;
+    }
+
+    .timeline li:nth-child(even) .timeline-img{
+        order: 1;
+    }
+
+    .timeline li:nth-child(odd) .timeline-img{
+        transform: translateX(50%);
+    }
+
+    .timeline li:nth-child(even) .timeline-img{
+        transform: translateX(-50%);
+    }
+
+    .timeline li:last-child{ 
+        float: right;
+        width: 50%;    
+    }
+
+    .timeline li:last-child .timeline-img{
+        width: 125.25px;
+        height: 125.25px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        transform: translateX(-50%);
+    }
+    /* About section */
+
+    /* contact us */  
+}
+
+@media(min-width:992px){
+    .container{    
+        max-width: 960px;
+    }
+}
+
+@media(min-width:1200px){
+    .container{    
+        max-width: 1040px;
+    }
+}
+/* min-width queries */
+
+
+@media(max-width:1199px){
+    html{
+        font-size: 14.5px;
+    }
+}
+
+@media(max-width:991px){
+    html{
+        font-size: 13.5px;
+    }
+
+    .main-header .site-logo{
+        font-size: 2.5rem;
+    }
+
+    .main-header .collapse{
+        display: none;
+    }
+
+    /* Toggle btn */
+    .main-header .toggle-button{
+        display: block;
+    }
+    /* Toggle btn */
+
+
+    .responsive-menu{
+        height: 100vh;
+        background-color: #000000;
+    }
+ 
+    .responsive-menu .collapse{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        max-height: calc(100vh - 120px);
+        overflow-y: auto;
+        margin: 20px 0;
+        text-align: center;  
+    }
+
+    .responsive-menu .collapse li {
+        margin-top: 20px;
+        display: block;
+    }
+
+
+    .owl-theme .owl-nav {
+        display: flex  !important;
+     }
+    
+}
+
+
+@media(max-width:767px){
+    .card{
+        width: 50%;
+        margin-bottom: 10px;
+    }
+
+    /* timeline */
+    .timeline li{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center !important;
+    }
+    
+    .timeline-img{
+        width: 10rem;
+        max-width: 100%;
+        margin: 10px auto;
+    }
+    
+    .timeline li:nth-child(odd) .timeline-content{
+        order: 2;
+    }
+
+    .timeline li:nth-child(odd) .timeline-img{
+        order: 1;
+    }
+
+    .timeline li:nth-child(even) .timeline-content{
+        order: 2;
+    }
+
+    .timeline li:nth-child(even) .timeline-img{
+        order: 1;
+    }
+
+    .timeline li:last-child{ 
+         width: 100%; 
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         text-align: center;   
+        }
+    
+    .timeline li:last-child .timeline-img{
+        width: 120.25px;
+        height: 120.25px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .timeline-content p {
+        line-height: 1.9;
+        text-align: center;
+    }
+
+    .col-md-6{
+        width: 100%;
+    } 
+}
+
+@media(max-width:576px){
+    .banner-content > h1{
+        font-size: 3rem;
+    }
+    
+    .card{
+        width: 100%;
+    }   
+    
+    footer{
+        flex-direction: column;
+    }
+}

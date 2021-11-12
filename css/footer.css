@@ -1,0 +1,15 @@
+footer a:hover{
+ color: #000000;
+}
+
+footer > .icons > li > .twitter{
+    background-color: #1DA1F2 ;
+}
+
+footer > .icons > li > .facebook{
+    background-color: #4267B2 ;
+}
+
+footer > .icons > li > .linkedin{
+    background-color: #0077b5 ;
+}
